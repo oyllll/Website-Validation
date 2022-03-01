@@ -3,8 +3,8 @@ from selenium.webdriver.support.ui import Select
 
 class BasePage(object):
 
-    # def __init__(self, driver):
-    #     self.browser = driver
+    def __init__(self, driver):
+        self.browser = driver
 
 class MainPage(BasePage):
 
