@@ -4,8 +4,8 @@ import moment from 'moment';
 function App() {
   const [nameUser, setName] = useState('');
   const [age, setAge] = useState('');
-  // const [date, setDate] = useState('');
-  // const [phone, setPhone] = useState('');
+  const [date, setDate] = useState('');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [errorMessageName, setErrorMessageName] = useState('');
   const [errorMessageAge, setErrorMessageAge] = useState('');
