@@ -1,71 +1,32 @@
-# Getting Started with Create React App
+# Website Validation 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have started learning the program by myself. I started with C language, Java, Javascript, HTML, CSS, React JS, Git, and Python. After that, I am interested in Web testing. So I went to learn the Selenium framework and I have built this project for practice.
 
-## Available Scripts
+## Front-end (Web Sever)
 
-In the project directory, you can run:
+- HTML
+- CSS
+- React JS
 
-### `npm start`
+## Web Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Python
+- Selenium Framework
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Scenario
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Website-Validation
+| TC No.   | Test Description| Step to Reproduce| Test Data| Expected Result| Status | Remark |
+|----------|-----------------|------------------|----------|----------------|--------|--------|
+| Testcase_01 | Verify content in the webpage should display correctly | - Open browser<br/> - Verify title webpage<br/> - Verify content| Url : http://localhost:3000| 1. “Register”<br/> 2. "Register"<br/> 3. “Full name :”<br/> 4. “Gender”<br/> 5. “Age :”<br/> 6. “Date of Birth”<br/> 7. “Phone No.”<br/> 8. “Email”<br/> 9. “Submit” | PASSED | Done   |
+| Testcase_02 | Verify content in the webpage should display correctly | - Open browser<br/> - Verify dropdown button|| 1. "Choose Gender"<br/> 2. “Female”<br/> 3. “Male”<br/> 4. “Other”| PASSED | Done   |
+| Testcase_03 | User input valid name should work fine| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be result with correctly that = null| PASSED | Done   |
+| Testcase_04 | User input name with number should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John 345<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Wrong Name”| PASSED | Done   |
+| Testcase_05 | User input name with symbol should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John *=/<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Wrong Name”| PASSED | Done   |
+| Testcase_06 | User input invalid age should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 9<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Underage”                                                                                                                                     | PASSED | Done   |
+| Testcase_07 | User input invalid age should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 51<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Overage”                                                                                                                                      | PASSED | Done   |
+| Testcase_08 | User input age with text should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : ab<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Enter age”| PASSED | Done   |
+| Testcase_09 | User input invalid date of birth should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1999-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com| Should be text error “*Date of Birth not related to age”| PASSED | Done   |
+| Testcase_10 | User input invalid phone should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 0123456789<br/> Text : john@gmail.com| Should be text error “*Wrong Phone no.”| PASSED | Done   |
+| Testcase_11 | User input phone with text should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : abcdefg<br/> Text : john@gmail.com| Should be text error “*Wrong Phone no.”| PASSED | Done   |
+| Testcase_12 | User input mail with symbol should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john==@gmail.com| Should be text error “*Enter your email address in format email@xxx.xxx”| PASSED | Done   |
+| Testcase_13 | User input valid all data should work fine| - Open browser<br/> - Input text with valid<br/> - Click Submit  button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com | Should be result with correctly that  “Registered Successfully”| PASSED | Done   |
