@@ -34,3 +34,7 @@ I have started learning the program by myself. I started with C language, Java, 
 | Testcase_11 | User input phone with text should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : abcdefg<br/> Text : john@gmail.com| Should be text error “*Wrong Phone no.”| PASSED | Done   |
 | Testcase_12 | User input mail with symbol should error| - Open browser<br/> - Input text with valid<br/> - Click button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john==@gmail.com| Should be text error “*Enter your email address in format email@xxx.xxx”| PASSED | Done   |
 | Testcase_13 | User input valid all data should work fine| - Open browser<br/> - Input text with valid<br/> - Click Submit  button| Text : John John<br/> Text : 23<br/> Text : 1998-04-20<br/> Text : 012-3456789<br/> Text : john@gmail.com | Should be result with correctly that  “Registered Successfully”| PASSED | Done   |
+
+## Example
+
+![example](https://user-images.githubusercontent.com/96046766/156501394-6cdfc4a1-6f6f-4688-ba63-937f15dd17a6.gif)
