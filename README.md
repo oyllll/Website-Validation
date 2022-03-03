@@ -8,10 +8,14 @@ I have started learning the program by myself. I started with C language, Java, 
 - CSS
 - React JS
 
+<img width="600" alt="web sever" src="https://user-images.githubusercontent.com/96046766/156499895-2b0ecb75-41a4-4f83-bf2d-1654a1dfbe0f.png">
+
 ## Web Testing
 
 - Python
 - Selenium Framework
+
+<img width="229" alt="result" src="https://user-images.githubusercontent.com/96046766/156500341-7779a7e9-a564-4fad-bf86-74cd8884c374.png">
 
 ## Scenario
 
