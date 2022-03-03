@@ -156,10 +156,10 @@ class TestRegisterForm(unittest.TestCase):
             mainPage.type_phone_text()
             mainPage.click_submit()
             mainPage.error_matches()
-            print("|11  |Testcase_11      | PASS |")
+            print("|11 |Testcase_11       | PASS |")
             print("-------------------------------")
         except :
-            print("|11  |Testcase_11      | FAIL |")
+            print("|11 |Testcase_11       | FAIL |")
             print("-------------------------------")
         
         self.browser.find_element(By. NAME, "input_phone").clear()
@@ -171,10 +171,10 @@ class TestRegisterForm(unittest.TestCase):
             mainPage.type_mail_false()
             mainPage.click_submit()
             mainPage.error_matches()
-            print("|12  |Testcase_12      | PASS |")
+            print("|12 |Testcase_12       | PASS |")
             print("-------------------------------")
         except :
-            print("|12  |Testcase_12      | FAIL |")
+            print("|12 |Testcase_12       | FAIL |")
             print("-------------------------------")
 
         self.browser.find_element(By. NAME, "input_mail").clear()
@@ -185,10 +185,10 @@ class TestRegisterForm(unittest.TestCase):
             mainPage.dropdown()
             mainPage.click_submit()
             mainPage.alert_success()
-            print("|13  |Testcase_13      | PASS |")
+            print("|13 |Testcase_13       | PASS |")
             print("-------------------------------")
         except :
-            print("|13  |Testcase_13      | FAIL |")
+            print("|13 |Testcase_13       | FAIL |")
             print("-------------------------------")
 
     def tearDown(self):
